@@ -38,7 +38,7 @@
             color: #333;
             font-weight: bold;
             display: block;
-            height: 30px;            
+            height: 30px;
         }
 
         a:hover {
@@ -62,7 +62,65 @@
         li a:visited {
             background-color: #ccc; /*  Цвет фона для посещенных ссылок */
         }
+        .footer {
+            background-color: #666;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        #ya-metrica {
+            overflow: hidden;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 80px;
+            height:15px;
+            border:0;
+        }
     </style>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter98635803 = new Ya.Metrika({
+                    id:98635803,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            x = "https://mc.yandex.ru/metrika/watch.js",
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        for (var i = 0; i < document.scripts.length; i++) {
+            if (document.scripts[i].src === x) { return; }
+        }
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = x;
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98635803" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <h1>Список книг</h1>
@@ -83,5 +141,13 @@
         <li><a href="https://m1r.ru/377-gadkij-utenok.html">Г.Х. Андерсен «Гадкий утенок»</a></li>
         <li><a href="https://m1r.ru/390-djujmovochka.html">Г. Х. Андерсен «Дюймовочка»</a></li>
     </ul>
+    <!-- Yandex.Metrika informer -->
+    <!-- Нижний колонтитул -->
+    <div id="ya-metrica">
+        <a href="https://metrika.yandex.ru/stat/?id=98635803&amp;from=informer"
+        target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/98635803/1_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+        alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="98635803" data-lang="ru" /></a>
+    </div>
+    <!-- /Yandex.Metrika informer -->
 </body>
 </html>
